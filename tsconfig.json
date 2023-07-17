@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@Config": ["src/config"],
+      "@Config/*": ["src/config/*"],
+      "@Entity": ["src/entity"],
+      "@Entity/*": ["src/entity/*"],
+      "@Controllers": ["src/controllers"],
+      "@Controllers/*": ["src/controllers/*"],
+      "@Middleware": ["src/middleware"],
+      "@Middleware/*": ["src/middleware/*"],
+      "@Repository": ["src/repository"],
+      "@Repository/*": ["src/repository/*"],
+      "@Services": ["src/services"],
+      "@Services/*": ["src/services/*"],
+      "@Utils": ["src/utils"],
+      "@Utils/*": ["src/utils/*"],
+      "@Helpers": ["src/helpers"],
+      "@Helpers/*": ["src/helpers/*"],
+      "@Errors": ["src/errors"],
+      "@Errors/*": ["src/errors/*"],
+      "@Test/*": ["test/*"]
+    }
+  },
+  "types": ["jest", "node"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
